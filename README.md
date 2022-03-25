@@ -11,6 +11,7 @@
 | Day 5 | Finalize CSS Styling and Responsive Design, begin postMVP if MVP attained | Incomplete |
 | Day 6 | Confirm finalized MVP & Bug Fixes | Incomplete |
 | Day 7 | Final Touches and deploying frontend | Incomplete |
+| Day 8 | Presentation | Incomplete |
 
 ## Project Description
 
