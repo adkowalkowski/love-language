@@ -26,7 +26,10 @@ The user of this app values how love languages can impact relationships (both fr
 
 ## Wireframes
 
-- [Mobile & Desktop](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/C9c1df959635a4aee914f74a5cf3d9a7b/projects/M40WmDPcunb/pages/0aea6d2b5be04142ac95939134f00557/image/0aea6d2b5be04142ac95939134f00557.png?1648237490386)
+- [Mobile & Desktop](https://imgur.com/a/BzuPnNO)
+
+## React Architecture
+- [React Architecture](https://imgur.com/a/yGqyY6x) 
 
 ### MVP/PostMVP
 
@@ -100,13 +103,15 @@ class Love(models.Model):
 | Home | Landing Page for a signed-in user, can submit/edit their top5 |
 | SignUp | Page to signup a new user |
 | SignIn |  Page to signin a user  |
+| AddForm |  Component that holds the form to add a user's top5 |
+| UpdateForm |  Component that holds the form to update a user's top5 |
 | Search | Page with a searchbox and then will return that user's top5 if the user is found |
 | About | About the site and creator |
 | Header | Logo and Menu |
 
 #### MVP (all in hrs unless otherwise stated)
 
-| Component                          | Priority | Estimated Time | Actual Time |
+| Task                          | Priority | Estimated Time | Actual Time |
 | ---------------------------------- | :------: | :------------: | :---------: |
 | Installing and Setup for backend   |    H     |      1       |           |
 | Models                             |    H     |      4       |           |
@@ -125,7 +130,7 @@ class Love(models.Model):
 
 #### PostMVP (all in hrs unless otherwise stated)
 
-| Component            | Priority | Estimated Time | Actual Time |
+| Task            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
 | Social network features              |    M    |      40       |           |
 | Total                |    N/A     |      40      |           |
