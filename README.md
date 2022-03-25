@@ -5,8 +5,8 @@
 | Day   | Deliverable                          | Status     |
 | ----- | ------------------------------------ | ---------- |
 | Day 1 | Planning and Approval                | Incomplete |
-| Day 2 | Set up backend files and structure, test and deploy backend   | Incomplete |
-| Day 3 | Set up frontend files, connect frontend with backend | Incomplete |
+| Day 2 | Set up backend files and structure, test and deploy backend | Incomplete |
+| Day 3 | Set up frontend files, connect frontend with backend, begin MVP attainment | Incomplete |
 | Day 4 | Attain MVP, debug MVP, begin styling | Incomplete |
 | Day 5 | Finalize CSS Styling and Responsive Design, begin postMVP if MVP attained | Incomplete |
 | Day 6 | Confirm finalized MVP & Bug Fixes | Incomplete |
@@ -20,7 +20,9 @@ This app will include a backend database using SQL and Django and a frontend web
 
 ## User Stories
 
-The user of this app loves to travel and is looking for a way to store flight and hotel ideas and compare for the best options. They are always browsing multiple sites but lose their place and want to hold it all in one location. This user is also concerned with budget and would like to compare different options to see what the most fiscally responsible idea is.
+Taken from the offical [5 love languages website](https://www.5lovelanguages.com/learn): "different people with different personalities give and receive love in different ways. By learning to recognize these preferences in yourself and in your loved ones, you can learn to identify the root of your conflicts, connect more profoundly, and truly begin to grow closer."
+
+The user of this app values how love languages can impact relationships (both friendship and romantic). However, it is very hard to keep track of your social network's love languages; it's even hard to remember your own love languages! Users of this application look for a centralized place where they can easily access their top 5 love languages as well as their social network's love languages.  
 
 ## Wireframes
 
@@ -30,72 +32,74 @@ The user of this app loves to travel and is looking for a way to store flight an
 
 #### MVP
 
-- 4 models for our data (Traveller, Trip, Flight, Hotel)
-- CRUD functionality
-- Have Routes and components on frontend
+- 2 models for data (User, Love)
+- Fully functional user authentication (token) (signup, signin, signout, changepassword, deleteaccount)
+- Ability to search by email (or username?)
+- CRUD functionality (Add User/Love, View Love, Edit User/Love, Delete User/Love)
+- Routes and components on frontend (Home, Signup, Signin, Search, About)
 - Fetch data from backend API
 - Responsive design from mobile to desktop
-- Use bootstrap for design
+- Use React bootstrap for design
 - Fully Deployed frontend and backend
-- Sorting functionality within each trip based on budget
 
 #### PostMVP
 
-- Login authentication
-- View friends' travel plans
-- Adding animations
+- Social network system (add friends so you can see their love languages without searching)
 
 ## Models
 
-```js
+```py
 
-Traveller = {
-    name: String,
-    email: String,
-    trips: []
-}
+# Example from lecture
+class User(AbstractBaseUser, PermissionsMixin):
+    
+    email = models.EmailField(max_length=255, unique=True)
+    is_active = models.BooleanField(default=True)
+    is_staff = models.BooleanField(default=False)
 
-Trip = {
-    name: String,
-    budget: Number
-    start_date: Date,
-    end_date: Date
-    flights: [],
-    hotels: []
-}
+    USERNAME_FIELD = 'email'
 
-Flight = {
-    name: String,
-    link: String,
-    price: Number
-}
+    objects = UserManager()
 
-Hotel = {
-    name: String,
-    link: String,
-    price: Number
-}
+    def __str__(self):
+        """Return string representation of the user"""
+        return self.email
 
+class Love(models.Model):
+    one: models.CharField(max_length=100)
+    two: models.CharField(max_length=100)
+    three: models.CharField(max_length=100)
+    four: models.CharField(max_length=100)
+    five: models.CharField(max_length=100)
+    owner = models.ForeignKey(
+        get_user_model(),
+        on_delete = models.CASCADE
+    )
+
+    dunder method 
 ```
 
 ## Routing Table
 
-| **URL**     | **HTTP Verb** | **Action** | **Description**              |
-| ----------- | ------------- | ---------- | ---------------------------- |
-| /traveller  | POST          | create     | add new user                 |
-| /trip       | POST          | create     | add new trip                 |
-| /trip       | GET           | show       | show all of this users trips |
-| /trip/:id   | GET           | show       | show specific trip           |
-| /trip/:id   | PUT           | update     | update specific trip         |
-| /trip/:id   | DELETE        | delete     | delete specific trip         |
-| /flight     | POST          | create     | add flight                   |
-| /flight/:id | GET           | show       | show flight                  |
-| /flight/:id | PUT           | update     | edit flight                  |
-| /flight/:id | DELETE        | delete     | delete flight                |
-| /hotel      | POST          | create     | add hotel                    |
-| /hotel/:id  | GET           | show       | show hotel                   |
-| /hotel/:id  | PUT           | update     | edit hotel                   |
-| /hotel/:id  | DELETE        | delete     | delete hotel                 |
+| **URL**     | **HTTP Verb** | **Description** |
+| ----------- | ------------- | ---------------- |
+| /sign-up | POST | Sign up a new user |
+| /sign-in | POST | User sign in |
+| /sign-out | DELETE | User sign out |
+| /change-password | PATCH | User change password |
+| /love-languages | POST | Add 5 love languages to user's account |
+| /love-languages/<int:pk> | GET | View 5 love languages of signed-in user |
+
+| /trip/:id   | PUT | update     | update specific trip         |
+| /trip/:id   | DELETE | delete     | delete specific trip         |
+| /flight     | POST | add flight                   |
+| /flight/:id | GET | show flight                  |
+| /flight/:id | PUT | update     | edit flight                  |
+| /flight/:id | DELETE | delete     | delete flight                |
+| /hotel      | POST | add hotel                    |
+| /hotel/:id  | GET | show hotel                   |
+| /hotel/:id  | PUT | update     | edit hotel                   |
+| /hotel/:id  | DELETE | delete     | delete hotel                 |
 
 ## Functional Components
 
@@ -138,12 +142,12 @@ Hotel = {
 | Total                |    H     |      14hr      |     hr      |
 
 ## Additional Libraries
-
+React Bootstrap
 ## Code Snippet
 
 ```
-
+TBD :-) 
 ```
 
 ## Issues and Resolutions
-
+TBD :-)
