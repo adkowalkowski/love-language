@@ -36,7 +36,7 @@ The user of this app values how love languages can impact relationships (both fr
 - Fully functional user authentication (token) (signup, signin, signout, changepassword, deleteaccount)
 - Ability to search by email (or username?)
 - CRUD functionality (Add User/Love, View Love, Edit User/Love, Delete User/Love)
-- Routes and components on frontend (Home, Signup, Signin, Search, About)
+- Routes and components on frontend 
 - Fetch data from backend API
 - Responsive design from mobile to desktop
 - Use React bootstrap for design
@@ -93,18 +93,16 @@ class Love(models.Model):
 | /love-languages/<int:pk> | PUT | Update 5 love languages of signed-in user |
 | /love-languages/search/<int:pk> | GET | Search and return another user's 5 love languages |
 
-## Functional Components
+## Functional Components 
 
 | Component                      |                   Description                    |
 | ------------------------------ | :----------------------------------------------: |
-| Home                           |        Landing Page to add new traveller         |
-| Trips                          | Page to view trips and add new trips to plan for |
-| Trips - Specific Trip          |  View all potential flights and hotels for trip  |
-| Trips - Specific Trip - Flight |        Add/update/delete flights for trip        |
-| Trips - Specific Trip - Hotel  |        Add/update/delete hotels for trip         |
-| About                          |            About the site and creator            |
-| Header                         |                  Logo and Menu                   |
-| Footer                         |         Copyright tag and link to github         |
+| Home | Landing Page for a signed-in user, can submit/edit their top5 |
+| SignUp | Page to signup a new user |
+| SignIn |  Page to signin a user  |
+| Search | Page with a searchbox and then will return that user's top5 if the user is found |
+| About | About the site and creator |
+| Header | Logo and Menu |
 
 #### MVP
 
