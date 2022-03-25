@@ -20,7 +20,7 @@ This app will include a backend database using SQL and Django and a frontend web
 
 ## User Stories
 
-Taken from the offical [5 love languages website](https://www.5lovelanguages.com/learn): "different people with different personalities give and receive love in different ways. By learning to recognize these preferences in yourself and in your loved ones, you can learn to identify the root of your conflicts, connect more profoundly, and truly begin to grow closer."
+Taken from the official [5 love languages website](https://www.5lovelanguages.com/learn): "different people with different personalities give and receive love in different ways. By learning to recognize these preferences in yourself and in your loved ones, you can learn to identify the root of your conflicts, connect more profoundly, and truly begin to grow closer."
 
 The user of this app values how love languages can impact relationships (both friendship and romantic). However, it is very hard to keep track of your social network's love languages; it's even hard to remember your own love languages! Users of this application look for a centralized place where they can easily access their top 5 love languages as well as their social network's love languages.  
 
@@ -121,14 +121,14 @@ class Love(models.Model):
 | Responsive Design                  |    H     |      4       |           |
 | CSS and Bootstrap                  |    H     |      4       |           |
 | Deploy frontend                    |    H     |      1       |           |
-| Total                              |    H     | 49 |           |
+| Total                              |    N/A     | 49 |           |
 
 #### PostMVP (all in hrs unless otherwise stated)
 
 | Component            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
 | Social network features              |    M    |      40       |           |
-| Total                |    H     |      40      |           |
+| Total                |    N/A     |      40      |           |
 
 ## Additional Libraries
 React Bootstrap
