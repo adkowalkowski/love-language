@@ -104,32 +104,33 @@ class Love(models.Model):
 | About | About the site and creator |
 | Header | Logo and Menu |
 
-#### MVP
+#### MVP (all in hrs unless otherwise stated)
 
 | Component                          | Priority | Estimated Time | Actual Time |
 | ---------------------------------- | :------: | :------------: | :---------: |
-| Installing and Setup for backend   |    H     |      1hr       |     hr      |
-| Models                             |    H     |      3hr       |     hr      |
-| CRUD Routes and testing on Postman |    H     |      3hr       |     hr      |
-| Deploying backend                  |    H     |     1.5hr      |     hr      |
-| Creating React App                 |    H     |      1hr       |     hr      |
-| Add Routes                         |    H     |      2hr       |     hr      |
-| Create Components                  |    H     |      5hr       |     hr      |
-| Sorting functionality              |    H     |      3hr       |     hr      |
-| Fetch and test data on frontend    |    H     |      5hr       |     hr      |
-| Responsive Design                  |    H     |      4hr       |     hr      |
-| CSS and Bootstrap                  |    H     |      5hr       |     hr      |
-| Deploy frontend                    |    H     |      1hr       |     hr      |
-| Total                              |    H     |     34.5hr     |     hr      |
+| Installing and Setup for backend   |    H     |      1       |           |
+| Models                             |    H     |      4       |           |
+| CRUD Routes and testing on Postman |    H     |      5       |           |
+| Deploying backend                  |    H     |     2      |           |
+| Creating React App                 |    H     |      1       |           |
+| Add Routes                         |    H     |      2       |           |
+| Create Components                  |    H     |      5       |           |
+| Connect user authentication on front-end                  |    H     |      10       |           |
+| Fetch and test data on frontend    |    H     |      5       |           |
+| Search by user on front-end    |    H     |      5       |           |
+| Responsive Design                  |    H     |      4       |           |
+| CSS and Bootstrap                  |    H     |      4       |           |
+| Deploy frontend                    |    H     |      1       |           |
+| Total                              |    H     | 49 |           |
 
-#### PostMVP
+#### PostMVP (all in hrs unless otherwise stated)
 
 | Component            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
-| Friends              |    L     |      6hr       |     hr      |
-| Login Authentication |    H     |      4hr       |     hr      |
-| Animations           |    H     |      4hr       |     hr      |
-| Total                |    H     |      14hr      |     hr      |
+| Friends              |    L     |      6       |           |
+| Login Authentication |    H     |      4       |           |
+| Animations           |    H     |      4       |           |
+| Total                |    H     |      14      |           |
 
 ## Additional Libraries
 React Bootstrap
