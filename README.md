@@ -89,17 +89,9 @@ class Love(models.Model):
 | /change-password | PATCH | User change password |
 | /love-languages | POST | Add 5 love languages to user's account |
 | /love-languages/<int:pk> | GET | View 5 love languages of signed-in user |
-
-| /trip/:id   | PUT | update     | update specific trip         |
-| /trip/:id   | DELETE | delete     | delete specific trip         |
-| /flight     | POST | add flight                   |
-| /flight/:id | GET | show flight                  |
-| /flight/:id | PUT | update     | edit flight                  |
-| /flight/:id | DELETE | delete     | delete flight                |
-| /hotel      | POST | add hotel                    |
-| /hotel/:id  | GET | show hotel                   |
-| /hotel/:id  | PUT | update     | edit hotel                   |
-| /hotel/:id  | DELETE | delete     | delete hotel                 |
+| /love-languages/<int:pk> | DELETE | Delete 5 love languages of signed-in user |
+| /love-languages/<int:pk> | PUT | Update 5 love languages of signed-in user |
+| /love-languages/search/<int:pk> | GET | Search and return another user's 5 love languages |
 
 ## Functional Components
 
