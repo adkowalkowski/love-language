@@ -127,10 +127,8 @@ class Love(models.Model):
 
 | Component            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
-| Friends              |    L     |      6       |           |
-| Login Authentication |    H     |      4       |           |
-| Animations           |    H     |      4       |           |
-| Total                |    H     |      14      |           |
+| Social network features              |    M    |      40       |           |
+| Total                |    H     |      40      |           |
 
 ## Additional Libraries
 React Bootstrap
