@@ -92,10 +92,10 @@ class Love(models.Model):
 | /sign-out | DELETE | User sign out |
 | /change-password | PATCH | User change password |
 | /love-languages | POST | Add 5 love languages to user's account |
-| /love-languages/<int:pk> | GET | View 5 love languages of signed-in user |
+| /love-languages | GET | View 5 love languages to user's account |
+| /love-languages/<int:pk> | GET | View 5 love languages of any user |
 | /love-languages/<int:pk> | DELETE | Delete 5 love languages of signed-in user |
 | /love-languages/<int:pk> | PUT | Update 5 love languages of signed-in user |
-| /love-languages/search/<int:pk> | GET | Search and return another user's 5 love languages |
 
 ## Functional Components 
 
