@@ -141,8 +141,8 @@ React Bootstrap
 ## Code Snippet
 
 ```
-TBD :-) 
+TBD 
 ```
 
 ## Issues and Resolutions
-TBD :-)
+TBD 
